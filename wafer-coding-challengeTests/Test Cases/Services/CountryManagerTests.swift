@@ -1,5 +1,5 @@
 //
-//  wafer_coding_challengeTests.swift
+//  CountryManagerTests.swift
 //  wafer-coding-challengeTests
 //
 //  Created by Abubakar Oladeji on 21/08/2018.
@@ -7,9 +7,8 @@
 //
 
 import XCTest
-@testable import wafer_coding_challenge
 
-class wafer_coding_challengeTests: XCTestCase {
+class CountryManagerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
