@@ -33,16 +33,16 @@ class CountryManagerTests: XCTestCase {
         XCTAssertNotNil(countryManager)
         
         // When fetch country
-        let expect = XCTestExpectation(description: "country_successful_fetch_callback")
+        let promise = XCTestExpectation(description: "country_successful_fetch_callback")
         
         countryManager!.fetchCountries { (countries, error) in
-            expect.fulfill()
+            promise.fulfill()
             XCTAssertNil(error)
             XCTAssertNotNil(countries)
             XCTAssert(countries!.count > 0)
         }
         
-        wait(for: [expect], timeout: 4)
+        wait(for: [promise], timeout: 4)
     }
     
     func testCountry_SuccessfulBadData() {
@@ -53,15 +53,36 @@ class CountryManagerTests: XCTestCase {
         XCTAssertNotNil(countryManager)
         
         // When fetch country with bad data
-        let expect = XCTestExpectation(description: "country_failed_fetch_callback")
+        let promise = XCTestExpectation(description: "country_failed_fetch_callback")
         
         countryManager!.fetchCountries { (countries, error) in
-            expect.fulfill()
+            promise.fulfill()
             XCTAssertNil(countries)
             XCTAssertNotNil(error)
             XCTAssertEqual(CountryError.invalidResponse, error!)
         }
         
-        wait(for: [expect], timeout: 4)
+        wait(for: [promise], timeout: 4)
+    }
+    
+    func testCountry_WithInternet() {
+        XCTAssertNotNil(countryData)
+        XCTAssertNil(countryManager)
+        
+        if Reachability.isReachable() {
+            countryManager = CountryManager()
+            XCTAssertNotNil(countryManager)
+            
+            // When fetch country with bad data
+            let promise = XCTestExpectation(description: "country_data_with_internet")
+            countryManager?.fetchCountries(completion: { (countries, error) in
+                promise.fulfill()
+                XCTAssertNotNil(countries)
+                XCTAssertNil(error)
+            })
+            wait(for: [promise], timeout: 5)
+        } else {
+            XCTAssert(!Reachability.isReachable())
+        }
     }
 }
