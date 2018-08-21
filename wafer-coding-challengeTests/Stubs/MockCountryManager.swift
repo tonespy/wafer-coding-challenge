@@ -9,6 +9,9 @@
 import XCTest
 @testable import wafer_coding_challenge
 
+/// RequestError
+///
+/// This is to help with specifying the type of request
 enum RequestType: Error {
     
     case successful
