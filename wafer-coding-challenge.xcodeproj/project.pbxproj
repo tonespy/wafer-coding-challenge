@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE2CFD20212C3792009763F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD1F212C3792009763F3 /* AppDelegate.swift */; };
+		BE2CFD22212C3792009763F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD21212C3792009763F3 /* ViewController.swift */; };
+		BE2CFD25212C3792009763F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2CFD23212C3792009763F3 /* Main.storyboard */; };
+		BE2CFD27212C3794009763F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2CFD26212C3794009763F3 /* Assets.xcassets */; };
+		BE2CFD2A212C3794009763F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2CFD28212C3794009763F3 /* LaunchScreen.storyboard */; };
+		BE2CFD35212C3794009763F3 /* wafer_coding_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD34212C3794009763F3 /* wafer_coding_challengeTests.swift */; };
+		BE2CFD40212C3794009763F3 /* wafer_coding_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD3F212C3794009763F3 /* wafer_coding_challengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE2CFD31212C3794009763F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE2CFD14212C3792009763F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE2CFD1B212C3792009763F3;
+			remoteInfo = "wafer-coding-challenge";
+		};
+		BE2CFD3C212C3794009763F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE2CFD14212C3792009763F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE2CFD1B212C3792009763F3;
+			remoteInfo = "wafer-coding-challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE2CFD1C212C3792009763F3 /* wafer-coding-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wafer-coding-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2CFD1F212C3792009763F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE2CFD21212C3792009763F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE2CFD24212C3792009763F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE2CFD26212C3794009763F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE2CFD29212C3794009763F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE2CFD2B212C3794009763F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2CFD30212C3794009763F3 /* wafer-coding-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wafer-coding-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2CFD34212C3794009763F3 /* wafer_coding_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wafer_coding_challengeTests.swift; sourceTree = "<group>"; };
+		BE2CFD36212C3794009763F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2CFD3B212C3794009763F3 /* wafer-coding-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wafer-coding-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2CFD3F212C3794009763F3 /* wafer_coding_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wafer_coding_challengeUITests.swift; sourceTree = "<group>"; };
+		BE2CFD41212C3794009763F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE2CFD19212C3792009763F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2CFD2D212C3794009763F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2CFD38212C3794009763F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE2CFD13212C3792009763F3 = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD1E212C3792009763F3 /* wafer-coding-challenge */,
+				BE2CFD33212C3794009763F3 /* wafer-coding-challengeTests */,
+				BE2CFD3E212C3794009763F3 /* wafer-coding-challengeUITests */,
+				BE2CFD1D212C3792009763F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE2CFD1D212C3792009763F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD1C212C3792009763F3 /* wafer-coding-challenge.app */,
+				BE2CFD30212C3794009763F3 /* wafer-coding-challengeTests.xctest */,
+				BE2CFD3B212C3794009763F3 /* wafer-coding-challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE2CFD1E212C3792009763F3 /* wafer-coding-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD1F212C3792009763F3 /* AppDelegate.swift */,
+				BE2CFD21212C3792009763F3 /* ViewController.swift */,
+				BE2CFD23212C3792009763F3 /* Main.storyboard */,
+				BE2CFD26212C3794009763F3 /* Assets.xcassets */,
+				BE2CFD28212C3794009763F3 /* LaunchScreen.storyboard */,
+				BE2CFD2B212C3794009763F3 /* Info.plist */,
+			);
+			path = "wafer-coding-challenge";
+			sourceTree = "<group>";
+		};
+		BE2CFD33212C3794009763F3 /* wafer-coding-challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD34212C3794009763F3 /* wafer_coding_challengeTests.swift */,
+				BE2CFD36212C3794009763F3 /* Info.plist */,
+			);
+			path = "wafer-coding-challengeTests";
+			sourceTree = "<group>";
+		};
+		BE2CFD3E212C3794009763F3 /* wafer-coding-challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD3F212C3794009763F3 /* wafer_coding_challengeUITests.swift */,
+				BE2CFD41212C3794009763F3 /* Info.plist */,
+			);
+			path = "wafer-coding-challengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE2CFD1B212C3792009763F3 /* wafer-coding-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2CFD44212C3794009763F3 /* Build configuration list for PBXNativeTarget "wafer-coding-challenge" */;
+			buildPhases = (
+				BE2CFD18212C3792009763F3 /* Sources */,
+				BE2CFD19212C3792009763F3 /* Frameworks */,
+				BE2CFD1A212C3792009763F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wafer-coding-challenge";
+			productName = "wafer-coding-challenge";
+			productReference = BE2CFD1C212C3792009763F3 /* wafer-coding-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE2CFD2F212C3794009763F3 /* wafer-coding-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2CFD47212C3794009763F3 /* Build configuration list for PBXNativeTarget "wafer-coding-challengeTests" */;
+			buildPhases = (
+				BE2CFD2C212C3794009763F3 /* Sources */,
+				BE2CFD2D212C3794009763F3 /* Frameworks */,
+				BE2CFD2E212C3794009763F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE2CFD32212C3794009763F3 /* PBXTargetDependency */,
+			);
+			name = "wafer-coding-challengeTests";
+			productName = "wafer-coding-challengeTests";
+			productReference = BE2CFD30212C3794009763F3 /* wafer-coding-challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE2CFD3A212C3794009763F3 /* wafer-coding-challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2CFD4A212C3794009763F3 /* Build configuration list for PBXNativeTarget "wafer-coding-challengeUITests" */;
+			buildPhases = (
+				BE2CFD37212C3794009763F3 /* Sources */,
+				BE2CFD38212C3794009763F3 /* Frameworks */,
+				BE2CFD39212C3794009763F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE2CFD3D212C3794009763F3 /* PBXTargetDependency */,
+			);
+			name = "wafer-coding-challengeUITests";
+			productName = "wafer-coding-challengeUITests";
+			productReference = BE2CFD3B212C3794009763F3 /* wafer-coding-challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE2CFD14212C3792009763F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Tonespy;
+				TargetAttributes = {
+					BE2CFD1B212C3792009763F3 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					BE2CFD2F212C3794009763F3 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BE2CFD1B212C3792009763F3;
+					};
+					BE2CFD3A212C3794009763F3 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BE2CFD1B212C3792009763F3;
+					};
+				};
+			};
+			buildConfigurationList = BE2CFD17212C3792009763F3 /* Build configuration list for PBXProject "wafer-coding-challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE2CFD13212C3792009763F3;
+			productRefGroup = BE2CFD1D212C3792009763F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE2CFD1B212C3792009763F3 /* wafer-coding-challenge */,
+				BE2CFD2F212C3794009763F3 /* wafer-coding-challengeTests */,
+				BE2CFD3A212C3794009763F3 /* wafer-coding-challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE2CFD1A212C3792009763F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2CFD2A212C3794009763F3 /* LaunchScreen.storyboard in Resources */,
+				BE2CFD27212C3794009763F3 /* Assets.xcassets in Resources */,
+				BE2CFD25212C3792009763F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2CFD2E212C3794009763F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2CFD39212C3794009763F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE2CFD18212C3792009763F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2CFD22212C3792009763F3 /* ViewController.swift in Sources */,
+				BE2CFD20212C3792009763F3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2CFD2C212C3794009763F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2CFD35212C3794009763F3 /* wafer_coding_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2CFD37212C3794009763F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2CFD40212C3794009763F3 /* wafer_coding_challengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE2CFD32212C3794009763F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE2CFD1B212C3792009763F3 /* wafer-coding-challenge */;
+			targetProxy = BE2CFD31212C3794009763F3 /* PBXContainerItemProxy */;
+		};
+		BE2CFD3D212C3794009763F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE2CFD1B212C3792009763F3 /* wafer-coding-challenge */;
+			targetProxy = BE2CFD3C212C3794009763F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE2CFD23212C3792009763F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2CFD24212C3792009763F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE2CFD28212C3794009763F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2CFD29212C3794009763F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE2CFD42212C3794009763F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE2CFD43212C3794009763F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE2CFD45212C3794009763F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WS3CSBR28;
+				INFOPLIST_FILE = "wafer-coding-challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.tonespy.wafer-coding-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE2CFD46212C3794009763F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WS3CSBR28;
+				INFOPLIST_FILE = "wafer-coding-challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.tonespy.wafer-coding-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE2CFD48212C3794009763F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WS3CSBR28;
+				INFOPLIST_FILE = "wafer-coding-challengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.tonespy.wafer-coding-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wafer-coding-challenge.app/wafer-coding-challenge";
+			};
+			name = Debug;
+		};
+		BE2CFD49212C3794009763F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WS3CSBR28;
+				INFOPLIST_FILE = "wafer-coding-challengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.tonespy.wafer-coding-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wafer-coding-challenge.app/wafer-coding-challenge";
+			};
+			name = Release;
+		};
+		BE2CFD4B212C3794009763F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WS3CSBR28;
+				INFOPLIST_FILE = "wafer-coding-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.tonespy.wafer-coding-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "wafer-coding-challenge";
+			};
+			name = Debug;
+		};
+		BE2CFD4C212C3794009763F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WS3CSBR28;
+				INFOPLIST_FILE = "wafer-coding-challengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.tonespy.wafer-coding-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "wafer-coding-challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE2CFD17212C3792009763F3 /* Build configuration list for PBXProject "wafer-coding-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2CFD42212C3794009763F3 /* Debug */,
+				BE2CFD43212C3794009763F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2CFD44212C3794009763F3 /* Build configuration list for PBXNativeTarget "wafer-coding-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2CFD45212C3794009763F3 /* Debug */,
+				BE2CFD46212C3794009763F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2CFD47212C3794009763F3 /* Build configuration list for PBXNativeTarget "wafer-coding-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2CFD48212C3794009763F3 /* Debug */,
+				BE2CFD49212C3794009763F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2CFD4A212C3794009763F3 /* Build configuration list for PBXNativeTarget "wafer-coding-challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2CFD4B212C3794009763F3 /* Debug */,
+				BE2CFD4C212C3794009763F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE2CFD14212C3792009763F3 /* Project object */;
+}
