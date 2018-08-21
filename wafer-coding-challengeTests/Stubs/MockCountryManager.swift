@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import wafer_coding_challenge
 
 enum RequestType: Error {
     
