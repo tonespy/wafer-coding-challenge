@@ -20,6 +20,9 @@
 		BE2CFD5D212C4A74009763F3 /* XCTestCase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD5C212C4A74009763F3 /* XCTestCase+Extension.swift */; };
 		BE2CFD5F212C4B0A009763F3 /* MockCountryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD5E212C4B0A009763F3 /* MockCountryManager.swift */; };
 		BE2CFD64212C4DAC009763F3 /* CountryManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD63212C4DAC009763F3 /* CountryManagerTests.swift */; };
+		BE2CFD67212C5EF1009763F3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD66212C5EF1009763F3 /* Reachability.swift */; };
+		BE2CFD6A212C6AE6009763F3 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD69212C6AE6009763F3 /* CountryViewController.swift */; };
+		BE2CFD6F212C72AA009763F3 /* CountryViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD6E212C72AA009763F3 /* CountryViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		BE2CFD5C212C4A74009763F3 /* XCTestCase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extension.swift"; sourceTree = "<group>"; };
 		BE2CFD5E212C4B0A009763F3 /* MockCountryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCountryManager.swift; sourceTree = "<group>"; };
 		BE2CFD63212C4DAC009763F3 /* CountryManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryManagerTests.swift; sourceTree = "<group>"; };
+		BE2CFD66212C5EF1009763F3 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		BE2CFD69212C6AE6009763F3 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
+		BE2CFD6E212C72AA009763F3 /* CountryViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 		BE2CFD1E212C3792009763F3 /* wafer-coding-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				BE2CFD65212C5ED9009763F3 /* Helpers */,
 				BE2CFD50212C3F8E009763F3 /* Model */,
 				BE2CFD4F212C3F62009763F3 /* Services */,
 				BE2CFD4E212C3F3A009763F3 /* Extensions */,
@@ -146,6 +153,7 @@
 		BE2CFD4D212C3F34009763F3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				BE2CFD68212C6A73009763F3 /* Countries */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -205,6 +213,39 @@
 				BE2CFD63212C4DAC009763F3 /* CountryManagerTests.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		BE2CFD65212C5ED9009763F3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD66212C5EF1009763F3 /* Reachability.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BE2CFD68212C6A73009763F3 /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD6C212C6BD5009763F3 /* View Model */,
+				BE2CFD6B212C6BC8009763F3 /* Extensions */,
+				BE2CFD69212C6AE6009763F3 /* CountryViewController.swift */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		BE2CFD6B212C6BC8009763F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE2CFD6C212C6BD5009763F3 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD6E212C72AA009763F3 /* CountryViewViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,9 +380,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2CFD6F212C72AA009763F3 /* CountryViewViewModel.swift in Sources */,
 				BE2CFD54212C40A2009763F3 /* Country.swift in Sources */,
 				BE2CFD22212C3792009763F3 /* ViewController.swift in Sources */,
+				BE2CFD67212C5EF1009763F3 /* Reachability.swift in Sources */,
 				BE2CFD20212C3792009763F3 /* AppDelegate.swift in Sources */,
+				BE2CFD6A212C6AE6009763F3 /* CountryViewController.swift in Sources */,
 				BE2CFD56212C4643009763F3 /* String+Extension.swift in Sources */,
 				BE2CFD52212C3FDA009763F3 /* CountryManager.swift in Sources */,
 			);
