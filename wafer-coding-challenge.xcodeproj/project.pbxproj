@@ -12,8 +12,18 @@
 		BE2CFD25212C3792009763F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2CFD23212C3792009763F3 /* Main.storyboard */; };
 		BE2CFD27212C3794009763F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2CFD26212C3794009763F3 /* Assets.xcassets */; };
 		BE2CFD2A212C3794009763F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2CFD28212C3794009763F3 /* LaunchScreen.storyboard */; };
-		BE2CFD35212C3794009763F3 /* wafer_coding_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD34212C3794009763F3 /* wafer_coding_challengeTests.swift */; };
 		BE2CFD40212C3794009763F3 /* wafer_coding_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD3F212C3794009763F3 /* wafer_coding_challengeUITests.swift */; };
+		BE2CFD52212C3FDA009763F3 /* CountryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD51212C3FDA009763F3 /* CountryManager.swift */; };
+		BE2CFD54212C40A2009763F3 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD53212C40A2009763F3 /* Country.swift */; };
+		BE2CFD56212C4643009763F3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD55212C4643009763F3 /* String+Extension.swift */; };
+		BE2CFD5B212C4A0C009763F3 /* all-countries.json in Resources */ = {isa = PBXBuildFile; fileRef = BE2CFD5A212C4A0C009763F3 /* all-countries.json */; };
+		BE2CFD5D212C4A74009763F3 /* XCTestCase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD5C212C4A74009763F3 /* XCTestCase+Extension.swift */; };
+		BE2CFD5F212C4B0A009763F3 /* MockCountryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD5E212C4B0A009763F3 /* MockCountryManager.swift */; };
+		BE2CFD64212C4DAC009763F3 /* CountryManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD63212C4DAC009763F3 /* CountryManagerTests.swift */; };
+		BE2CFD67212C5EF1009763F3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD66212C5EF1009763F3 /* Reachability.swift */; };
+		BE2CFD6A212C6AE6009763F3 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD69212C6AE6009763F3 /* CountryViewController.swift */; };
+		BE2CFD6F212C72AA009763F3 /* CountryViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD6E212C72AA009763F3 /* CountryViewViewModel.swift */; };
+		BE2CFD72212CC12B009763F3 /* CountryViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD71212CC12B009763F3 /* CountryViewViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +52,21 @@
 		BE2CFD29212C3794009763F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE2CFD2B212C3794009763F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE2CFD30212C3794009763F3 /* wafer-coding-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wafer-coding-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE2CFD34212C3794009763F3 /* wafer_coding_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wafer_coding_challengeTests.swift; sourceTree = "<group>"; };
 		BE2CFD36212C3794009763F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE2CFD3B212C3794009763F3 /* wafer-coding-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wafer-coding-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2CFD3F212C3794009763F3 /* wafer_coding_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wafer_coding_challengeUITests.swift; sourceTree = "<group>"; };
 		BE2CFD41212C3794009763F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2CFD51212C3FDA009763F3 /* CountryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryManager.swift; sourceTree = "<group>"; };
+		BE2CFD53212C40A2009763F3 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		BE2CFD55212C4643009763F3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		BE2CFD5A212C4A0C009763F3 /* all-countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "all-countries.json"; sourceTree = "<group>"; };
+		BE2CFD5C212C4A74009763F3 /* XCTestCase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extension.swift"; sourceTree = "<group>"; };
+		BE2CFD5E212C4B0A009763F3 /* MockCountryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCountryManager.swift; sourceTree = "<group>"; };
+		BE2CFD63212C4DAC009763F3 /* CountryManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryManagerTests.swift; sourceTree = "<group>"; };
+		BE2CFD66212C5EF1009763F3 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		BE2CFD69212C6AE6009763F3 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
+		BE2CFD6E212C72AA009763F3 /* CountryViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewViewModel.swift; sourceTree = "<group>"; };
+		BE2CFD71212CC12B009763F3 /* CountryViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +117,11 @@
 		BE2CFD1E212C3792009763F3 /* wafer-coding-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				BE2CFD65212C5ED9009763F3 /* Helpers */,
+				BE2CFD50212C3F8E009763F3 /* Model */,
+				BE2CFD4F212C3F62009763F3 /* Services */,
+				BE2CFD4E212C3F3A009763F3 /* Extensions */,
+				BE2CFD4D212C3F34009763F3 /* UI */,
 				BE2CFD1F212C3792009763F3 /* AppDelegate.swift */,
 				BE2CFD21212C3792009763F3 /* ViewController.swift */,
 				BE2CFD23212C3792009763F3 /* Main.storyboard */,
@@ -110,7 +135,9 @@
 		BE2CFD33212C3794009763F3 /* wafer-coding-challengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				BE2CFD34212C3794009763F3 /* wafer_coding_challengeTests.swift */,
+				BE2CFD59212C49BA009763F3 /* Stubs */,
+				BE2CFD58212C49B5009763F3 /* Extensions */,
+				BE2CFD57212C49A4009763F3 /* Test Cases */,
 				BE2CFD36212C3794009763F3 /* Info.plist */,
 			);
 			path = "wafer-coding-challengeTests";
@@ -123,6 +150,113 @@
 				BE2CFD41212C3794009763F3 /* Info.plist */,
 			);
 			path = "wafer-coding-challengeUITests";
+			sourceTree = "<group>";
+		};
+		BE2CFD4D212C3F34009763F3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD68212C6A73009763F3 /* Countries */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BE2CFD4E212C3F3A009763F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD55212C4643009763F3 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE2CFD4F212C3F62009763F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD51212C3FDA009763F3 /* CountryManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BE2CFD50212C3F8E009763F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD53212C40A2009763F3 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE2CFD57212C49A4009763F3 /* Test Cases */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD70212CC10D009763F3 /* View Model */,
+				BE2CFD60212C4D75009763F3 /* Services */,
+			);
+			path = "Test Cases";
+			sourceTree = "<group>";
+		};
+		BE2CFD58212C49B5009763F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD5C212C4A74009763F3 /* XCTestCase+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE2CFD59212C49BA009763F3 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD5E212C4B0A009763F3 /* MockCountryManager.swift */,
+				BE2CFD5A212C4A0C009763F3 /* all-countries.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		BE2CFD60212C4D75009763F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD63212C4DAC009763F3 /* CountryManagerTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BE2CFD65212C5ED9009763F3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD66212C5EF1009763F3 /* Reachability.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BE2CFD68212C6A73009763F3 /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD6C212C6BD5009763F3 /* View Model */,
+				BE2CFD6B212C6BC8009763F3 /* Extensions */,
+				BE2CFD69212C6AE6009763F3 /* CountryViewController.swift */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		BE2CFD6B212C6BC8009763F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE2CFD6C212C6BD5009763F3 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD6E212C72AA009763F3 /* CountryViewViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		BE2CFD70212CC10D009763F3 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD71212CC12B009763F3 /* CountryViewViewModelTests.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +373,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2CFD5B212C4A0C009763F3 /* all-countries.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +391,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2CFD6F212C72AA009763F3 /* CountryViewViewModel.swift in Sources */,
+				BE2CFD54212C40A2009763F3 /* Country.swift in Sources */,
 				BE2CFD22212C3792009763F3 /* ViewController.swift in Sources */,
+				BE2CFD67212C5EF1009763F3 /* Reachability.swift in Sources */,
 				BE2CFD20212C3792009763F3 /* AppDelegate.swift in Sources */,
+				BE2CFD6A212C6AE6009763F3 /* CountryViewController.swift in Sources */,
+				BE2CFD56212C4643009763F3 /* String+Extension.swift in Sources */,
+				BE2CFD52212C3FDA009763F3 /* CountryManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +406,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE2CFD35212C3794009763F3 /* wafer_coding_challengeTests.swift in Sources */,
+				BE2CFD72212CC12B009763F3 /* CountryViewViewModelTests.swift in Sources */,
+				BE2CFD5F212C4B0A009763F3 /* MockCountryManager.swift in Sources */,
+				BE2CFD5D212C4A74009763F3 /* XCTestCase+Extension.swift in Sources */,
+				BE2CFD64212C4DAC009763F3 /* CountryManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +577,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WS3CSBR28;
 				INFOPLIST_FILE = "wafer-coding-challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +596,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WS3CSBR28;
 				INFOPLIST_FILE = "wafer-coding-challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
