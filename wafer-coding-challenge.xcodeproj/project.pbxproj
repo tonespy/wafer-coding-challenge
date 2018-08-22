@@ -23,6 +23,7 @@
 		BE2CFD67212C5EF1009763F3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD66212C5EF1009763F3 /* Reachability.swift */; };
 		BE2CFD6A212C6AE6009763F3 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD69212C6AE6009763F3 /* CountryViewController.swift */; };
 		BE2CFD6F212C72AA009763F3 /* CountryViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD6E212C72AA009763F3 /* CountryViewViewModel.swift */; };
+		BE2CFD72212CC12B009763F3 /* CountryViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD71212CC12B009763F3 /* CountryViewViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		BE2CFD66212C5EF1009763F3 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		BE2CFD69212C6AE6009763F3 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		BE2CFD6E212C72AA009763F3 /* CountryViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewViewModel.swift; sourceTree = "<group>"; };
+		BE2CFD71212CC12B009763F3 /* CountryViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 		BE2CFD57212C49A4009763F3 /* Test Cases */ = {
 			isa = PBXGroup;
 			children = (
+				BE2CFD70212CC10D009763F3 /* View Model */,
 				BE2CFD60212C4D75009763F3 /* Services */,
 			);
 			path = "Test Cases";
@@ -244,6 +247,14 @@
 			isa = PBXGroup;
 			children = (
 				BE2CFD6E212C72AA009763F3 /* CountryViewViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		BE2CFD70212CC10D009763F3 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CFD71212CC12B009763F3 /* CountryViewViewModelTests.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -395,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2CFD72212CC12B009763F3 /* CountryViewViewModelTests.swift in Sources */,
 				BE2CFD5F212C4B0A009763F3 /* MockCountryManager.swift in Sources */,
 				BE2CFD5D212C4A74009763F3 /* XCTestCase+Extension.swift in Sources */,
 				BE2CFD64212C4DAC009763F3 /* CountryManagerTests.swift in Sources */,
