@@ -20,9 +20,9 @@ class CountryManagerTests: XCTestCase {
     }
     
     override func tearDown() {
-        super.tearDown()
         countryData = nil
         countryManager = nil
+        super.tearDown()
     }
     
     func testcountry_SuccessfulRequest() {
