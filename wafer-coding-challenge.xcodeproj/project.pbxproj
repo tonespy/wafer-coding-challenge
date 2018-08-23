@@ -25,6 +25,10 @@
 		BE2CFD72212CC12B009763F3 /* CountryViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CFD71212CC12B009763F3 /* CountryViewViewModelTests.swift */; };
 		BEBE4A60212D3C2400C7CC49 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE4A5F212D3C2400C7CC49 /* CountryTableViewCell.swift */; };
 		BEBE4A63212EC78B00C7CC49 /* CountryViewUI+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE4A62212EC78B00C7CC49 /* CountryViewUI+Extension.swift */; };
+		BEBE4A66212EDF7B00C7CC49 /* CountryTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE4A65212EDF7B00C7CC49 /* CountryTableViewViewModel.swift */; };
+		BEBE4A68212EE06B00C7CC49 /* CountryViewUIViewModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE4A67212EE06B00C7CC49 /* CountryViewUIViewModel+Extension.swift */; };
+		BEBE4A6A212EE12000C7CC49 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE4A69212EE12000C7CC49 /* UIViewController+Extension.swift */; };
+		BEBE4A6D212EEF4D00C7CC49 /* CountryTableViewUIViewModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE4A6C212EEF4D00C7CC49 /* CountryTableViewUIViewModel+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		BE2CFD71212CC12B009763F3 /* CountryViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewViewModelTests.swift; sourceTree = "<group>"; };
 		BEBE4A5F212D3C2400C7CC49 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		BEBE4A62212EC78B00C7CC49 /* CountryViewUI+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountryViewUI+Extension.swift"; sourceTree = "<group>"; };
+		BEBE4A65212EDF7B00C7CC49 /* CountryTableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewViewModel.swift; sourceTree = "<group>"; };
+		BEBE4A67212EE06B00C7CC49 /* CountryViewUIViewModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountryViewUIViewModel+Extension.swift"; sourceTree = "<group>"; };
+		BEBE4A69212EE12000C7CC49 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		BEBE4A6C212EEF4D00C7CC49 /* CountryTableViewUIViewModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountryTableViewUIViewModel+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				BE2CFD55212C4643009763F3 /* String+Extension.swift */,
+				BEBE4A69212EE12000C7CC49 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -242,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				BEBE4A62212EC78B00C7CC49 /* CountryViewUI+Extension.swift */,
+				BEBE4A67212EE06B00C7CC49 /* CountryViewUIViewModel+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -265,6 +275,7 @@
 		BEBE4A5D212D3C0400C7CC49 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				BEBE4A6B212EEF3300C7CC49 /* Extensions */,
 				BEBE4A61212D3C2700C7CC49 /* View Model */,
 				BEBE4A5F212D3C2400C7CC49 /* CountryTableViewCell.swift */,
 			);
@@ -274,8 +285,17 @@
 		BEBE4A61212D3C2700C7CC49 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				BEBE4A65212EDF7B00C7CC49 /* CountryTableViewViewModel.swift */,
 			);
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		BEBE4A6B212EEF3300C7CC49 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BEBE4A6C212EEF4D00C7CC49 /* CountryTableViewUIViewModel+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +308,7 @@
 				BE2CFD18212C3792009763F3 /* Sources */,
 				BE2CFD19212C3792009763F3 /* Frameworks */,
 				BE2CFD1A212C3792009763F3 /* Resources */,
+				BEBE4A64212EDA4200C7CC49 /* Build Number Increment Script */,
 			);
 			buildRules = (
 			);
@@ -405,20 +426,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BEBE4A64212EDA4200C7CC49 /* Build Number Increment Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Number Increment Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE2CFD18212C3792009763F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEBE4A6A212EE12000C7CC49 /* UIViewController+Extension.swift in Sources */,
 				BE2CFD6F212C72AA009763F3 /* CountryViewViewModel.swift in Sources */,
 				BE2CFD54212C40A2009763F3 /* Country.swift in Sources */,
 				BE2CFD67212C5EF1009763F3 /* Reachability.swift in Sources */,
 				BE2CFD20212C3792009763F3 /* AppDelegate.swift in Sources */,
+				BEBE4A68212EE06B00C7CC49 /* CountryViewUIViewModel+Extension.swift in Sources */,
 				BEBE4A60212D3C2400C7CC49 /* CountryTableViewCell.swift in Sources */,
 				BE2CFD6A212C6AE6009763F3 /* CountryViewController.swift in Sources */,
 				BEBE4A63212EC78B00C7CC49 /* CountryViewUI+Extension.swift in Sources */,
 				BE2CFD56212C4643009763F3 /* String+Extension.swift in Sources */,
+				BEBE4A6D212EEF4D00C7CC49 /* CountryTableViewUIViewModel+Extension.swift in Sources */,
 				BE2CFD52212C3FDA009763F3 /* CountryManager.swift in Sources */,
+				BEBE4A66212EDF7B00C7CC49 /* CountryTableViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
