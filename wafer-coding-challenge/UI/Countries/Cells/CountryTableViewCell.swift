@@ -132,6 +132,7 @@ class CountryTableViewCell: UITableViewCell {
                 if velocityX >= Constants.MAX_POINT_PER_SEC {
                     animatePan(x: self.frameWidth, y: actualCenter.y, constant: 0)
                     countryDelegate?.deleteRow(atIndex: indexPath)
+                    actionView.removeFromSuperview()
                 } else {
                     if tranlationX == Constants.DEFAULT_ANCHOR_POINT {
                         animatePan(x: self.actualCenter.x, y: self.actualCenter.y, constant: self.frameWidth)
