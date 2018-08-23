@@ -9,9 +9,18 @@
 import UIKit
 
 class CountryViewController: UITableViewController {
+    
+    var numberOfRowns = 5
+    var activeCell: CountryTableViewCell?
+    
+    struct Constants {
+        static let MAIN_CELL_ID = "country_cell_identifier"
+        static let DETAULT_ROW_HEIGHT: CGFloat = 100
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,21 +30,24 @@ class CountryViewController: UITableViewController {
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return numberOfRowns
     }
 
     // MARK: - Table view delegate
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.MAIN_CELL_ID, for: indexPath) as! CountryTableViewCell
+        cell.indexPath = indexPath
+        cell.countryDelegate = self
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return Constants.DETAULT_ROW_HEIGHT
     }
 
 }
