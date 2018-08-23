@@ -31,6 +31,12 @@ class CountryViewViewModel {
         }
     }
     
+    private var doneFetching: Bool = false {
+        didSet {
+            self.fetchedAllData?(doneFetching)
+        }
+    }
+    
     private var countryError: CountryError = .unknown {
         didSet  {
             var message = "Please, try again later. Thank You."
@@ -46,6 +52,7 @@ class CountryViewViewModel {
     var updateBottomLoadingStatus: ((Bool)->())?
     var displayFetchedCountries: (([Country], Int)->())?
     var displayFetchError: ((String)->())?
+    var fetchedAllData: ((Bool)->())?
     
     init(service: CountryManagerProtocol = CountryManager()) {
         self.service = service
@@ -56,6 +63,7 @@ class CountryViewViewModel {
         self.displayCountry = (countries: [Country](), fetchCount: 0)
         self.topIsLoading = false
         self.bottomIsLoading = false
+        self.doneFetching = false
     }
     
     func fetchData() {
@@ -76,8 +84,10 @@ class CountryViewViewModel {
     }
     
     func fetchMore() {
-        self.bottomIsLoading = true
-        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(processData), userInfo: nil, repeats: false)
+        if !self.bottomIsLoading {
+            self.bottomIsLoading = true
+            Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(processData), userInfo: nil, repeats: false)
+        }
     }
     
     // Default limit is 10
@@ -85,10 +95,21 @@ class CountryViewViewModel {
         guard countries.count > 0 else { return }
         
         let startIndex = displayCountry.fetchCount * 10
-        let endIndex = (displayCountry.fetchCount <= 0) ? 10 : displayCountry.fetchCount + 10
-        let currentData = self.countries[startIndex..<endIndex]
+        if startIndex >= self.countries.count {
+            doneFetching = true
+            return
+        }
         
-        self.displayCountry = (countries: Array(currentData), fetchCount: (self.displayCountry.fetchCount + 1))
+        var endIndex = (displayCountry.fetchCount <= 0) ? 10 : (displayCountry.fetchCount + 1) * 10
+        if endIndex > self.countries.count {
+            endIndex = self.countries.count
+        }
+        let currentData = self.countries[startIndex..<endIndex]
+        let arrayCurrentData = Array(currentData)
+        
+        self.displayCountry = (countries: arrayCurrentData, fetchCount: (self.displayCountry.fetchCount + 1))
+        self.bottomIsLoading = false
+        self.topIsLoading = false
     }
     
     func removeCountry(country: Country) {
