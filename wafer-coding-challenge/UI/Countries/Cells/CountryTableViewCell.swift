@@ -15,7 +15,10 @@ protocol CountryCellProtocol {
 
 class CountryTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var languageLabel: UILabel!
+    @IBOutlet weak var currencyLabel: UILabel!
     @IBOutlet weak var mainContentView: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
     
     let actionView: UIView = {
         let view = UIView()
@@ -40,6 +43,23 @@ class CountryTableViewCell: UITableViewCell {
     lazy var frameWidth: CGFloat = {
         return frame.size.width
     }()
+    
+    // Country Model
+    var country: Country? {
+        didSet {
+            if let country = country {
+                viewModel = CountryTableViewViewModel(withCountry: country)
+                viewModel?.setupModel()
+            }
+        }
+    }
+    
+    // Cell ViewModel
+    var viewModel: CountryTableViewViewModel? {
+        didSet {
+            setupViewModel()
+        }
+    }
     
     struct Constants {
         // This is the default maximun velocity of the pan gesture along the X-Axis

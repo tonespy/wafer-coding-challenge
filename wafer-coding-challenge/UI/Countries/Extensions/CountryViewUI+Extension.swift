@@ -11,8 +11,17 @@ import UIKit
 extension CountryViewController: CountryCellProtocol {
     
     func deleteRow(atIndex indexPath: IndexPath) {
-        numberOfRowns -= 1
+        guard let viewModel = viewModel else { return }
+        
+        // Remove from viewmodel
+        viewModel.removeCountry(country: countries[indexPath.row])
+        
+        // Remove from countries in controller
+        countries.remove(at: indexPath.row)
+        
+        // Return active cell to nil.
         activeCell = nil
+        
         tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
     }
     
