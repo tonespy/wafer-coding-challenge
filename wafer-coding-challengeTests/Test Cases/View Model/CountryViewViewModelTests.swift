@@ -111,7 +111,7 @@ class CountryViewViewModelTests: XCTestCase {
         
         var countries = [Country]()
         let promise = XCTestExpectation(description: "Successfu Fetch Countries")
-        viewModel?.displayFetchedCountries = { ctrs in
+        viewModel?.displayFetchedCountries = { ctrs, fetchCount in
             countries.append(contentsOf: ctrs)
             promise.fulfill()
         }
@@ -137,7 +137,7 @@ class CountryViewViewModelTests: XCTestCase {
         var message = ""
         let countryPromise = XCTestExpectation(description: "Failed To Fetch Countries")
         let messagePromise = XCTestExpectation(description: "Error Message")
-        viewModel?.displayFetchedCountries = { ctrs in
+        viewModel?.displayFetchedCountries = { ctrs, fetchCount in
             countries = ctrs
             countryPromise.fulfill()
         }
